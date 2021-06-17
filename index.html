@@ -2,78 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=1024">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <!-- <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1"> -->
-    <title>Ivan Burenkov's github page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
 
-    <style>html {
-      /* default font-size is 16px - this is set in the default browser stylesheet */ 
-      font-size: 16px; 
-      font-weight: 400; 
-      line-height: 1.5; 
-    }</style>
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
 
-    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
 
     <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
     <!-- Custom styles for this template -->
-   <link href="navbar-top-fixed.css" rel="stylesheet">
-    <link href="sticky-footer.css" rel="stylesheet">
-    </head>
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+
   <body>
-    
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Quantum physicist</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <h6>Tools:</h6>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ivanburenkov.github.io/genjpd">JPD generator</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ivanburenkov.github.io/genrpd">PND generator</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <main class="flex-shrink-0">
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Ivan Burenkov</h1>
-          <p class="col-md-8 fs-4">
-            Here you can find web version of some quantum tools developed for my research projects. All the tools where develped in C and then compiled to WebAssembly.
-          </p>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Quantum physicist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <h6>Tools:</h6>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ivanburenkov.github.io/genjpd">JPD generator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ivanburenkov.github.io/genrpd">PND generator</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">Ivan Burenkov's GitHub page</h1>
+      <p class="lead">
+        Here you can find web version of some quantum tools developed for my research projects. All the tools where develped in C and then compiled to WebAssembly.
+      </p>
     </main>
-    <footer class="footer mt-auto py-3 bg-light">
+
+    <footer class="footer">
       <div class="container">
         <span class="text-muted">
           <a class="wasm-logo" href="https://webassembly.org/" target="_blanc"></a>
@@ -81,5 +59,15 @@
         </span>
       </div>
     </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
