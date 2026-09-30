@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software & Tools | Ivan Burenkov</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <style>
+      .page-header {
+        background-color: #f8f9fa;
+        padding: 60px 0 40px;
+        margin-top: -60px; /* Offset for fixed navbar */
+      }
+      .card-img-top {
+        height: 150px;
+        object-fit: cover;
+        background-color: #e9ecef;
+      }
+      .tech-badge {
+        font-size: 0.8em;
+        margin-right: 4px;
+        margin-bottom: 8px;
+      }
+      .tool-card {
+        transition: transform 0.2s ease-in-out;
+      }
+      .tool-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+    <!-- Fixed Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ivan Burenkov</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="software.html">Software & Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <main class="flex-shrink-0">
+      <div class="page-header border-bottom">
+        <div class="container text-center">
+          <h1 class="display-5 fw-bold">Software & Web Tools</h1>
+          <p class="lead mt-3 mx-auto" style="max-width: 800px;">
+            Open-access computational tools for quantum optics. These browser-based widgets provide researchers with immediate data analysis and visualization capabilities.
+          </p>
+          <a href="https://www.iburenkov.com/Data/" class="btn btn-outline-dark mt-2" title="Sample data">Access All Sample Data</a>
+        </div>
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+          <!-- Tool: JPD generator -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Data Visualization">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">JPD Generator</h5>
+                <p class="card-text flex-grow-1">Generate and compare Joint Photon-Number Distributions of different entangled light sources.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/genjpd/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: PND generator -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Statistical Analysis">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">PND Generator</h5>
+                <p class="card-text flex-grow-1">Generate and compare Photon-Number Distributions of different light sources.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/genrpd/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: JPD reconstruction -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Quantum Reconstruction">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">JPD Reconstruction</h5>
+                <p class="card-text flex-grow-1">Entangled light source mode structure reconstruction tool.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/fitjpd/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: G(2) autocorrelation -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1620912189868-30788ee5b306?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Autocorrelation">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">G<sup>(2)</sup> Autocorrelation</h5>
+                <p class="card-text flex-grow-1">Second-order autocorrelation function g<sup>(2)</sup> calculator.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/g2/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: G(2) crosscorrelation -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Crosscorrelation">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">G<sup>(2)</sup> Crosscorrelation</h5>
+                <p class="card-text flex-grow-1">Second-order cross-correlation function g<sup>(2)</sup> calculator.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/g2cross/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: SPD characterization -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1574689049597-7e6d2bc6275d?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Detector Calibration">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">SPD Characterization</h5>
+                <p class="card-text flex-grow-1">Interactive widget for Single-Photon Detector calibration and analysis.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/spdcalibrate/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool: Allan Deviation -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0 tool-card">
+              <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&q=80&w=600" class="card-img-top" alt="Allan Deviation">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Allan Deviation</h5>
+                <p class="card-text flex-grow-1">Tool for calculating and visualizing Allan Deviation for stability analysis.</p>
+                <div class="mt-3">
+                  <a href="https://www.iburenkov.com/AllanDeviation/" class="btn btn-dark btn-sm w-100 mb-2">Launch Tool</a>
+                  <div class="text-center">
+                    <a href="https://www.iburenkov.com/Data/" class="text-decoration-none text-muted small">Sample Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white" id="contact">
+      <div class="container d-flex justify-content-between align-items-center">
+        <span>© 2026 Ivan Burenkov. All Rights Reserved.</span>
+        <div>
+          <a href="mailto:ivan.burenkov@gmail.com" class="text-white text-decoration-none me-3">Email</a>
+          <a href="https://github.com/ivanburenkov" class="text-white text-decoration-none me-3">GitHub</a>
+          <a href="#" class="text-white text-decoration-none">Google Scholar</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
