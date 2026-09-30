@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ivan Burenkov | Experimental Quantum Physicist</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar-top-fixed.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 30, 60, 0.8), rgba(0, 30, 60, 0.9)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=2000') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+        margin-top: -60px; /* Offset for fixed navbar */
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .tech-badge {
+        font-size: 0.85em;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+    <!-- Fixed Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ivan Burenkov</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link" href="software.html">Software & Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-shrink-0">
+      <div class="hero-section text-center">
+        <div class="container py-5">
+          <h1 class="display-4 fw-bold">Experimental Quantum Physicist</h1>
+          <p class="lead mt-3 mb-4 mx-auto" style="max-width: 800px;">
+            Translating theoretical quantum mechanics into scalable hardware. Specializing in neutral-atom physical operations, Ultra-High Vacuum (UHV) systems, and error-tailored architectures[cite: 1].
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#research" class="btn btn-primary btn-lg px-4 gap-3">View Research Highlights</a>
+            <a href="software.html" class="btn btn-outline-light btn-lg px-4">Explore Web Tools</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Highlights -->
+      <div class="container py-5" id="research">
+        <h2 class="pb-2 border-bottom text-center mb-5">Research Highlights</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          
+          <!-- Highlight 1: Error Correction -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Quantum Hardware">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Quantum Error Correction & Architecture</h5>
+                <p class="card-text">Developing error-tailored architectures using single-shot quantum measurement accuracy estimates. Recently demonstrated a record 40 dB improvement in error correction efficiency below classical limits[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight 2: Sensing -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Biophotonics">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Quantum Sensing & Biophotonics</h5>
+                <p class="card-text">Led the development of a single-photon sensitive Quantum Flow Cytometer for rapid biomarker detection. This project was awarded as a Stage 1 Winner in the NIH Quantum Sensing Technology Challenge[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight 3: Networks -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Fiber Optics">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Metropolitan Quantum Networks</h5>
+                <p class="card-text">Pioneering the implementation of the DCQ-net across the Washington D.C. area, achieving entanglement distribution over deployed 100+ km fiber links utilizing advanced phase-stabilization techniques[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight 4: Imaging -->
+          <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Laser Imaging">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Super-Resolution Imaging (S-RIPE)</h5>
+                <p class="card-text">Invented Super-Resolution Imaging via Photon Enumeration. Leveraging photon-number-resolving measurements to bypass classical diffraction limits for highly sensitive imaging applications[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Software Teaser Section -->
+      <div class="bg-light py-5">
+        <div class="container text-center">
+          <h2 class="mb-4">Interactive Web Tools</h2>
+          <p class="lead mb-4 mx-auto" style="max-width: 700px;">
+            Bridging hardware and software, I develop browser-based applications to advance open science in quantum optics. Leveraging C, C++, and Python via WebAssembly and Pyodide to bring intensive computational tools directly to researchers.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap mb-4">
+            <span class="badge bg-secondary tech-badge">WebAssembly</span>
+            <span class="badge bg-secondary tech-badge">Pyodide</span>
+            <span class="badge bg-secondary tech-badge">Python</span>
+            <span class="badge bg-secondary tech-badge">JavaScript</span>
+            <span class="badge bg-secondary tech-badge">C/C++</span>
+          </div>
+          <a href="software.html" class="btn btn-dark btn-lg">View Software Portfolio</a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white" id="contact">
+      <div class="container d-flex justify-content-between align-items-center">
+        <span>© 2026 Ivan Burenkov. All Rights Reserved.</span>
+        <div>
+          <a href="mailto:ivan.burenkov@gmail.com" class="text-white text-decoration-none me-3">Email</a>
+          <a href="https://github.com/ivanburenkov" class="text-white text-decoration-none me-3">GitHub</a>
+          <a href="#" class="text-white text-decoration-none">Google Scholar</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
